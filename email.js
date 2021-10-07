@@ -18,3 +18,15 @@ emailArr.forEach(element => {
         console.error(e);
     }
 });
+console.log("--------------");
+let emailArray = new Array ( "abc@bridgelabz.co.in",  "abc@gmail.com.com","abc@yahoo.com",  "abc@1.com","abc-100@yahoo.com",
+ "abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net","abc.100@abc.com.au","abc+100@gmail.com",
+ ".abc@abc.com", "abc", "abc@.com.my","abc@abc@gmail.com","abc()*@gmail.com","abc..2002@gmail.com","abc.@gmail.com",
+ "abc123@.com","abc123@.com.com","abc123@gmail.a","abc@%*.com",".abc@gmail.com.aa.au" );
+ emailArray.forEach(element => {
+    try{
+        emailValidator(element);
+    }catch(e){
+        console.error(e);
+    }
+});
